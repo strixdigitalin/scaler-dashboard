@@ -1,0 +1,224 @@
+.content{
+    margin-top: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: max-content;
+    background-color: #F4F5F7;
+}
+
+
+
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: fit-content;
+    width: 100%;
+   color: #343C44;
+   font-size: 24px;
+   line-height: 29.88px;
+   margin-bottom: 8px;
+   font-weight: 500;
+}
+.header_subhead{
+    color: #343C44;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.92;
+   
+
+}
+
+
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f4f5f7;
+    height: fit-content;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+      monospace;
+  }
+  .primary_button {
+    height: 40px;
+    width: 177px;
+    color: #fff;
+    border: #fff;
+    border-radius: 8px;
+    background-color: #7b35e7;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .secondary_button,
+  .secondary_button1 {
+    height: 40px;
+    width: 177px;
+    color: #7b35e7;
+    font-size: 14px;
+    border: 1px solid #7b35e7;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .secondary_button1 {
+    background-color: #f4f5f7 !important;
+  }
+  .custommodal_close {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 50px;
+    width: 98%;
+    color: #7b34e7;
+    background-color: #fff;
+    border: none;
+  }
+  .closeCircle {
+    /* background-color: #E5D6FA; */
+    color: #7b35e7;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  
+  .signin-image {
+    height: 100vh;
+    width: 50vw;
+  }
+  
+  .signin-title {
+    font-size: 30px;
+    font-weight: 900;
+    margin-right: 9px;
+    margin-bottom: 20px;
+    color: #343c44;
+  }
+  
+  .signin-welcome {
+    font-size: 17px;
+    font-weight: normal;
+    margin-right: 280px;
+    margin-bottom: 9px;
+    color: #343c44;
+  }
+  
+  .signin-button {
+    background-color: #7b35e7;
+    width: 327px;
+    height: 50px;
+    border-width: 0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .signin-forgot {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    /* text-align: right; */
+    color: #7b35e7;
+    margin-left: 210px;
+    margin-bottom: 24px;
+    margin-top: 13px;
+  }
+  
+  .signin-dont2 {
+    font-size: 16px;
+    font-weight: normal;
+    /* line-height: 21px; */
+    /* margin-bottom: 9px; */
+    color: #343c44;
+  }
+  
+  .signin-dont {
+    font-weight: normal;
+    font-size: 16px;
+    /* line-height: 19px; */
+    /* text-align: right; */
+    color: #7b35e7;
+  }
+  
+  .signin-input {
+    border-width: 0;
+    width: 307px;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 15px;
+    box-shadow: 0px 1px 2px rgb(50 50 71 / 8%), 0px 0px 1px rgb(50 50 71 / 20%);
+  }
+  
+
+  .signin-respo {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .mainpanel-sign {
+    width: 50vw;
+  }
+
+.label1{
+  font-size: 18px;
+}  
+.input1{
+  width: 100%;
+  padding: 8px 5px;
+  border-top: none;
+  border-left: none;
+  color: black;
+  border-right: none;
+
+  /* margin: auto; */
+  background: none;
+  /* border-radius: 10px; */
+  
+}
+.add-course-form1{
+  width: 50%;
+  margin: auto;
+  margin-left: 20px;
+  /* text-align: center; */
+}
+
+.add-course{
+  width: 300px;
+  color: black;
+  background: rgb(108, 211, 245);
+  border: none;
+
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin: auto;
+
+}
+  
+  @media screen and (max-width: 780px) {
+    .signin-respo {
+        display: flex;
+        flex-direction: column;
+      }
+      .signin-image {
+        display: none
+      }
+      .signin-title {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+      .signin-welcome {
+        margin-right: 20px;
+        text-align: initial;
+      }
+      .mainpanel-sign {
+        width: auto;
+      }
+    }
