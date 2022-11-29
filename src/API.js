@@ -52,6 +52,7 @@ export const addCourse = (payload, callBack) => {
 
   fetch(base_url + "/course/", requestOptions)
     .then((response) => response.text())
+
     .then((result) => callBack(JSON.parse(result)))
     .catch((error) => console.log("error", error));
 };
