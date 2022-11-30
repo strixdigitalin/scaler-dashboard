@@ -16,6 +16,7 @@ import { getAllOrders } from "API";
 import { getOrdersById } from "API";
 import { getStore } from "API";
 import { USER_DATA } from "API";
+import { useParams } from "react-router-dom";
 
 const styles = {
   cardCategoryWhite: {
@@ -51,6 +52,7 @@ const useStyles = makeStyles(styles);
 
 export default function OrderTable() {
   const classes = useStyles();
+  const params = useParams();
 
   const [users, setUsers] = useState([]);
   const [setToArr, setSetToArr] = useState([]);
@@ -70,7 +72,8 @@ export default function OrderTable() {
   };
   useEffect(() => {
     let arr2 = [];
-    getOrdersById(getStore(USER_DATA)._id, (res) => {
+    // getOrdersById(getStore(USER_DATA)._id, (res) => {
+    getOrdersById(params.userId, (res) => {
       setUsers(res.orders);
       console.log(res);
       res.orders.map((item) => {

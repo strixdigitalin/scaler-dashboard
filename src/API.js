@@ -1,6 +1,10 @@
-export const CHECK_AUTH = "IS_USER_LOGGED_IN_DASHBOARD";
+// export const CHECK_AUTH = "IS_USER_LOGGED_IN_DASHBOARD";
+// export const USER_TYPE = "SCALER_DASHBOARD";
+// export const USER_DATA = "SCALER_USER_DATA_DASHBOARD";
+export const CHECK_AUTH = "IS_USER_LOGGED_IN";
 export const USER_TYPE = "SCALER_DASHBOARD";
-export const USER_DATA = "SCALER_USER_DATA_DASHBOARD";
+export const USER_DATA = "SCALER_USER_DATA";
+
 export const base_url = "https://scaler-back.herokuapp.com";
 // export const base_url = "http://localhost:5000";
 export const getStore = (name) => JSON.parse(localStorage.getItem(name));

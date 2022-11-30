@@ -22,13 +22,14 @@ export default function Signin() {
   // const navigate = useNavigate();
 
   useEffect(() => {
+    console.log(getStore(USER_DATA), "<<< get store");
     if (getStore(CHECK_AUTH) == "true") {
       // navigate("/admin");
       // window.location.href = "/admin";
-      if (getStore(USER_TYPE) == "admin") {
+      if (getStore(USER_DATA)?.userType == "admin") {
         window.location.href = "/admin/course";
       }
-      if (getStore(USER_TYPE) == "user") {
+      if (getStore(USER_TYPE)?.userType == "user") {
         window.location.href = "/user/course";
       }
     }

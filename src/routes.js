@@ -144,7 +144,7 @@ export const userRoutes = [
   //   layout: "/user",
   // },
   {
-    path: "/course",
+    path: "/course/:userId",
     name: "Your Courses",
     rtlName: "ملف تعريفي للمستخدم",
     icon: Person,
@@ -152,7 +152,7 @@ export const userRoutes = [
     layout: "/user",
   },
   {
-    path: "/orders",
+    path: "/orders/:userId",
     name: "Your Orders",
     rtlName: "ملف تعريفي للمستخدم",
     icon: Person,

@@ -79,9 +79,9 @@ export default function User({ ...rest }) {
   };
   // initialize and destroy the PerfectScrollbar plugin
   React.useEffect(() => {
-    if (getStore(USER_TYPE) != "user") {
-      window.location.href = "/signin";
-    }
+    // if (getStore(USER_TYPE)?.userType != "user") {
+    //   window.location.href = "/signin";
+    // }
     if (navigator.platform.indexOf("Win") > -1) {
       ps = new PerfectScrollbar(mainPanel.current, {
         suppressScrollX: true,

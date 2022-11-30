@@ -37,7 +37,7 @@ ReactDOM.render(
       <Route path="/user" component={User} />
       <Route path="/rtl" component={RTL} />
       <Route path="/signin" component={Signin} />
-      <Redirect from="/" to="/signin" />
+      <Redirect from="/" to="/user" />
     </Switch>
   </Router>,
   document.getElementById("root")
